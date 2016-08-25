@@ -119,7 +119,7 @@ public class CommandCenter
             return;
         }
         // Ignore line comment
-        if ( command.startsWith( "#" ) )
+        /*if ( command.startsWith( "#" ) )
         {
             return;
         }
@@ -128,7 +128,7 @@ public class CommandCenter
         if ( commandEnds != -1 )
         {
             command = command.substring( 0, commandEnds );
-        }
+        }*/
         // If command includes multiple segments, call them one by one using recursive call
         if ( command.indexOf( COMMAND_DELIMITER ) != -1 )
         {
